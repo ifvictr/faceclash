@@ -1,0 +1,14 @@
+<h1 class="heading">Report</h1>
+<p>Did you find something that didn't seem right? Got a problem with something? Let us know. We'll get back to you soon.</p>
+<form data-form="report">
+    <ul class="list-items">
+        <li><input type="text" id="report_name" placeholder="What's your name?"></li>
+        <li><input type="email" id="report_email" placeholder="What's your email?"></li>
+        <li><textarea id="report_message" minlength="32" maxlength="510" placeholder="What do you need to say?"></textarea></li>
+        <li id="counter">510 characters remaining</li>
+    </ul>
+    <ul class="buttons">
+        <li><input type="submit" data-action="submit_report" value="Send" class="button"></li>
+        <li><input type="reset" data-action="reset" value="Reset" class="button"></li>
+    </ul>
+</form>

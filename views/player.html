@@ -1,0 +1,31 @@
+<h1 class="heading">Player</h1>
+<ul class="buttons">
+    <li><input type="button" data-action="render_dashboard" class="button" value="Dashboard"></li>
+    <li><input type="button" data-action="render_reports" class="button" value="Reports"></li>
+    <li><input type="button" data-action="logout" class="button" value="Logout"></li>
+</ul>
+<div class="img-view">
+    <img id="player_img" class="img-player" draggable="false">
+</div>
+<form data-form="player">
+    <ul class="list-items">
+        <li><input type="text" id="player_first_name" placeholder="First name"></li>
+        <li><input type="text" id="player_last_name" placeholder="Last name"></li>
+        <li>
+            <select id="player_gender">
+                <option selected disabled>Gender</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+            </select>
+        </li>
+        <li><input type="text" id="player_ip" placeholder="Origin IP address" disabled></li>
+        <li><input type="text" id="player_score" placeholder="Score" disabled></li>
+        <li><input type="text" id="player_wins" placeholder="Wins" disabled></li>
+        <li><input type="text" id="player_losses" placeholder="Losses" disabled></li>
+    </ul>
+    <ul class="buttons">
+        <li><input type="submit" class="button" data-action="save_player" value="Save"></li>
+        <li><input type="button" class="button g-button" data-action="approve_player" value="Approve"></li>
+        <li><input type="button" class="button r-button" data-action="delete_player" value="Delete"></li>
+    </ul>
+</form>

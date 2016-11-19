@@ -1,0 +1,31 @@
+<h1 class="heading">Submit</h1>
+<p>
+    Itching to reach the top of the leaderboard? Submit your photo today, and see if you will! <b>Disclaimer:</b> We hold
+    no rights to the images submitted by users. Please be courteous to others and make sure you have their consent if a
+    photo isn't yours.
+</p>
+<form data-form="submit">
+    <ul class="list-items">
+        <li><input type="text" id="submit_first_name" placeholder="What's your first name?" maxlength="35"></li>
+        <li><input type="text" id="submit_last_name" placeholder="What's your last name? (optional)" maxlength="35"></li>
+        <li>
+            <select id="submit_gender">
+                <option selected disabled>Which gender are you?</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+            </select>
+        </li>
+    </ul>
+    <div class="img-preview">
+        <p>Photo preview:</p>
+        <img id="preview" draggable="false">
+    </div>
+    <div class="button upload-button">
+        <span>Upload your photo</span>
+        <input type="file" id="submit_photo" class="button">
+    </div>
+    <ul class="buttons">
+        <li><input type="submit" data-action="submit_photo" value="Submit" class="button"></li>
+        <li><input type="reset" value="Reset" class="button"></li>
+    </ul>
+</form>
