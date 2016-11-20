@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600);
+/* Reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, code, em, strong, b, i, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td, section{
+    border: 0;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    background: #4d384d;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    line-height: 1;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+em, i{
+    font-style: italic;
+}
+strong, b{
+    font-weight: bold;
+}
+h1{
+    font-size: 1.35em;
+    font-weight: bold;
+    line-height: 1.25;
+}
+p{
+    line-height: 1.5;
+}
+ul, ol{
+    list-style-type: none;
+}
+#content{
+    margin: auto;
+    margin-bottom: 2.5em;
+    max-width: 75%;
+}
+#content, #content > *:not(:first-child){
+    margin-top: 1.5em;
+}
+#content a{
+    border-bottom: 1px dotted #c6a9c6;
+    color: #c6a9c6;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+}
+#content a:hover{
+    border-bottom-color: transparent;
+}
+.banner{
+    background: linear-gradient(180deg, #b691b6 0%, #875a87 100%);
+    background: -webkit-linear-gradient(top, #b691b6 0%, #875a87 100%);
+    border-radius: 4px;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-transform: lowercase;
+}
+.small{
+    font-size: 0.5em;
+    font-weight: normal;
+}
+.buttons a{
+    color: #ffffff !important;
+}
+.buttons li{
+    display: inline-block;
+}
+.buttons .button{
+    width: 100%;
+}
+.button{
+    background: #a679a6;
+    border: 0;
+    border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.313em;
+    outline: 0;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-transform: lowercase;
+    transition: 0.1s all ease-in-out;
+    -webkit-transition: 0.1s all ease-in-out;
+}
+.button:hover{
+    background: rgba(166, 121, 166, 0.75);
+}
+.button:active{
+    background: #875a87;
+}
+@media screen and (max-width: 736px){
+    #content{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 480px){
+    .small, .buttons li, .button{
+        display: block;
+    }
+    .buttons li + li{
+        margin-top: 0.25em;
+    }
+}
