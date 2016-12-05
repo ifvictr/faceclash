@@ -1,5 +1,5 @@
 # [Faceclash](https://faceclash.ml)
-Source code of the game I made in mid-October to November 2016, and the source of a bit of controversy at my school. It initially started out as a
+Source code of the game I made in mid-October to November 2016, and stirred people up at my school a little. It initially started out as a
 learning experiment with SQL, AJAX, and the Elo rating algorithm. This game was inspired by Mark Zuckerberg's Facemash from back in 2003.
 
 ### A brief look at Facemash
@@ -29,11 +29,10 @@ it my school's version of Tinder. Everything was pretty awesome those days. :smi
 ### Features
 - Administration dashboard, control over images
 - Reporting content
-- Both genders can play, unlike the only-female photos Facemash
-- Photos are not stolen, they're submitted by users
+- End-user photo submission
 - Fully JavaScript frontend, with PHP backend
 - User-configurable settings, preferred gender
-- Modernized user interface
+- Modernized user interface, fully responsive
 
 ### Requirements
 - PHP
