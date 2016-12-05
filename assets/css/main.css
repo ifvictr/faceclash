@@ -44,7 +44,7 @@ ul, ol{
     margin-bottom: 2.5em;
     max-width: 75%;
 }
-#content, #content > *:not(:first-child){
+#content, #content > *:not(:first-child), .question > *{
     margin-top: 1.5em;
 }
 #content a{
@@ -71,6 +71,7 @@ ul, ol{
     font-weight: normal;
 }
 .buttons a{
+    border: 0 !important;
     color: #ffffff !important;
 }
 .buttons li{
