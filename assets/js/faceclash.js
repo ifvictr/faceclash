@@ -130,7 +130,7 @@
         // TODO: Fix synchronous AJAX request, use async method instead
         var loggedIn = false;
         $.ajax({
-            url: "api/auth.php",
+            url: "/api/auth.php",
             type: "post",
             dataType: "json",
             async: false
@@ -167,7 +167,7 @@
             toggleView("login");
         }
         $.ajax({
-            url: "api/data.php",
+            url: "/api/data.php",
             type: "post",
             dataType: "json",
             data: {
@@ -233,7 +233,7 @@
     }
     function renderImages(){
         $.ajax({
-            url: "api/data.php",
+            url: "/api/data.php",
             type: "post",
             dataType: "json",
             data: {
@@ -266,7 +266,7 @@
     }
     function renderLeaderboard(){
         $.ajax({
-            url: "api/data.php",
+            url: "/api/data.php",
             type: "post",
             dataType: "json",
             data: {
@@ -309,7 +309,7 @@
         var $content = $("#content");
         $content.hide();
         $.ajax({
-            url: "api/player.php",
+            url: "/api/player.php",
             type: "post",
             dataType: "json",
             data: {
@@ -358,7 +358,7 @@
             toggleView("login");
         }
         $.ajax({
-            url: "api/report.php",
+            url: "/api/report.php",
             type: "post",
             dataType: "json",
             data: {
@@ -424,7 +424,7 @@
         switch(action.toLowerCase()){
             case "approve_player":
                 $.ajax({
-                    url: "api/player.php",
+                    url: "/api/player.php",
                     type: "post",
                     dataType: "json",
                     data: {
@@ -442,7 +442,7 @@
             case "delete_player":
                 var id = data; // Another spaghetti
                 $.ajax({
-                    url: "api/player.php",
+                    url: "/api/player.php",
                     type: "post",
                     dataType: "json",
                     data: {
@@ -461,7 +461,7 @@
             case "delete_report":
                 var id = data; // With meatballs?
                 $.ajax({
-                    url: "api/report.php",
+                    url: "/api/report.php",
                     type: "post",
                     dataType: "json",
                     data: {
@@ -482,7 +482,7 @@
                 var password = clean($("#login_password").val());
                 if(user && password){
                     $.ajax({
-                        url: "api/auth.php",
+                        url: "/api/auth.php",
                         type: "post",
                         dataType: "json",
                         data: {
@@ -511,7 +511,7 @@
                 break;
             case "logout":
                 $.ajax({
-                    url: "api/auth.php",
+                    url: "/api/auth.php",
                     type: "post",
                     dataType: "json",
                     data: {
@@ -548,7 +548,7 @@
                 var gender = clean($("#player_gender").val());
                 if(firstName && gender){
                     $.ajax({
-                        url: "api/player.php",
+                        url: "/api/player.php",
                         type: "post",
                         dataType: "json",
                         data: {
@@ -587,7 +587,7 @@
                 var gender = $("#submit_gender").val();
                 if(firstName && gender && isValidPhoto($("#submit_photo").val())){
                     $.ajax({
-                        url: "api/submit_photo.php",
+                        url: "/api/submit_photo.php",
                         type: "post",
                         dataType: "json",
                         data: {
@@ -619,7 +619,7 @@
                 var message = clean($("#report_message").val());
                 if(message.length >= 32 && message.length <= 510){
                     $.ajax({
-                        url: "api/submit_report.php",
+                        url: "/api/submit_report.php",
                         type: "post",
                         dataType: "json",
                         data: {
@@ -643,7 +643,7 @@
                 break;
             case "submit_vote":
                 $.ajax({
-                    url: "api/vote.php",
+                    url: "/api/vote.php",
                     type: "post",
                     dataType: "json",
                     data: {
@@ -684,7 +684,7 @@
         }
         var $content = $("#content");
         $.ajax({
-            url: "views/" + page + ".html",
+            url: "/views/" + page + ".html",
             dataType: "html"
         })
             .done(function(data){
